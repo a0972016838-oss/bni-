@@ -646,6 +646,228 @@
     transform: translateY(0);
   }
 
+  /* ── COMPANY SECTION ── */
+  .company-section { background: var(--sand); }
+
+  .company-intro {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 64px;
+    margin-bottom: 72px;
+    align-items: center;
+  }
+
+  .company-desc {
+    font-size: 15px;
+    line-height: 2.2;
+    color: #4a4440;
+  }
+
+  .company-desc p + p { margin-top: 20px; }
+
+  .company-link-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 32px;
+    padding: 14px 28px;
+    background: var(--ink);
+    color: var(--cream);
+    text-decoration: none;
+    font-size: 13px;
+    letter-spacing: 2px;
+    transition: all 0.3s;
+  }
+
+  .company-link-btn:hover {
+    background: var(--terra);
+    gap: 16px;
+  }
+
+  .company-link-btn svg {
+    width: 16px; height: 16px;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 2;
+  }
+
+  .company-stats {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+  }
+
+  .stat-card {
+    background: var(--white);
+    padding: 28px 24px;
+    border-bottom: 3px solid var(--gold);
+    text-align: center;
+  }
+
+  .stat-number {
+    font-family: 'Playfair Display', serif;
+    font-size: 44px;
+    font-weight: 700;
+    color: var(--terra);
+    line-height: 1;
+  }
+
+  .stat-unit {
+    font-size: 16px;
+    font-weight: 400;
+  }
+
+  .stat-label {
+    font-size: 12px;
+    letter-spacing: 2px;
+    color: var(--muted);
+    margin-top: 8px;
+    text-transform: uppercase;
+  }
+
+  .materials-title {
+    font-size: 11px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--terra);
+    font-weight: 500;
+    margin-bottom: 16px;
+  }
+
+  .material-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 40px;
+  }
+
+  .material-tag {
+    padding: 6px 16px;
+    background: var(--ink);
+    color: var(--cream);
+    font-size: 12px;
+    letter-spacing: 1px;
+    font-family: 'Playfair Display', serif;
+  }
+
+  .equipment-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    margin-bottom: 40px;
+  }
+
+  .equip-card {
+    background: var(--white);
+    padding: 20px 16px;
+    text-align: center;
+    border: 1px solid var(--sand);
+    transition: all 0.3s;
+  }
+
+  .equip-card:hover {
+    border-color: var(--gold);
+    background: var(--cream);
+  }
+
+  .equip-ton {
+    font-family: 'Playfair Display', serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--terra);
+  }
+
+  .equip-unit {
+    font-size: 11px;
+    color: var(--muted);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin: 4px 0;
+  }
+
+  .equip-count {
+    font-size: 13px;
+    color: var(--ink);
+  }
+
+  .services-row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+  }
+
+  .service-card {
+    background: var(--white);
+    padding: 32px 28px;
+    border-top: 3px solid transparent;
+    transition: all 0.3s;
+  }
+
+  .service-card:hover { border-color: var(--gold); }
+
+  .service-icon { font-size: 32px; margin-bottom: 16px; }
+
+  .service-title {
+    font-family: 'Noto Serif TC', serif;
+    font-size: 17px;
+    font-weight: 600;
+    margin-bottom: 8px;
+  }
+
+  .service-en {
+    font-size: 11px;
+    letter-spacing: 2px;
+    color: var(--muted);
+    text-transform: uppercase;
+    margin-bottom: 16px;
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+  }
+
+  .service-desc {
+    font-size: 13px;
+    line-height: 2;
+    color: #4a4440;
+  }
+
+  /* ── CONTACT STRIP ── */
+  .contact-strip {
+    background: var(--moss);
+    padding: 56px 0;
+  }
+
+  .contact-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 32px;
+    align-items: center;
+  }
+
+  .contact-item {
+    text-align: center;
+    color: var(--white);
+  }
+
+  .contact-icon { font-size: 24px; margin-bottom: 10px; }
+
+  .contact-label {
+    font-size: 10px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.6);
+    margin-bottom: 6px;
+  }
+
+  .contact-value {
+    font-size: 14px;
+    color: var(--white);
+    text-decoration: none;
+    line-height: 1.7;
+    transition: color 0.3s;
+  }
+
+  a.contact-value:hover { color: var(--light-gold); }
+
   /* ── RESPONSIVE ── */
   @media (max-width: 900px) {
     .hero { grid-template-columns: 1fr; }
@@ -657,6 +879,11 @@
     .interests-layout { grid-template-columns: 1fr; }
     .container { padding: 0 32px; }
     section { padding: 72px 0; }
+    .company-intro { grid-template-columns: 1fr; gap: 40px; }
+    .equipment-grid { grid-template-columns: repeat(2, 1fr); }
+    .services-row { grid-template-columns: 1fr; }
+    .contact-grid { grid-template-columns: 1fr 1fr; gap: 24px; }
+    .company-stats { grid-template-columns: 1fr 1fr; }
   }
 </style>
 </head>
@@ -960,6 +1187,139 @@
   </div>
 </section>
 
+<!-- COMPANY SECTION -->
+<section class="company-section">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="section-number">06</div>
+      <div>
+        <h2 class="section-title">晶豪企業</h2>
+        <span class="section-en">Ching Hao Enterprise Co., Ltd.</span>
+      </div>
+    </div>
+
+    <div class="company-intro">
+      <div class="reveal">
+        <div class="company-desc">
+          <p>晶豪企業成立於 1993 年，位於台南南區，<strong>專注塑膠射出及代工業務超過 30 年</strong>。初期以壓克力製品為主，近十年擴展至多種原料的精密製造。</p>
+          <p>憑藉卓越技術與深厚製造經驗，通過 <strong>ISO 9001 認證</strong>並每年稽核，提供客戶從產品設計、模具製作到生產加工的一條龍服務。</p>
+          <p>許芳綾以第二代業務經理身份，帶領晶豪邁向 ESG 轉型、導入循環經濟，致力讓台灣製造更友善地球。</p>
+        </div>
+
+        <div style="margin-top:28px;">
+          <div class="materials-title">可加工材料</div>
+          <div class="material-tags">
+            <span class="material-tag">PC</span>
+            <span class="material-tag">ABS</span>
+            <span class="material-tag">Tritan</span>
+            <span class="material-tag">PBT</span>
+            <span class="material-tag">TPR</span>
+            <span class="material-tag">AS</span>
+            <span class="material-tag">PP</span>
+            <span class="material-tag">PETG</span>
+            <span class="material-tag">壓克力</span>
+          </div>
+        </div>
+
+        <a href="https://www.ching-hao.com/" target="_blank" rel="noopener" class="company-link-btn">
+          前往晶豪官方網站
+          <svg viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+        </a>
+      </div>
+
+      <div class="company-stats reveal">
+        <div class="stat-card">
+          <div class="stat-number">30<span class="stat-unit">+</span></div>
+          <div class="stat-label">年製造經驗</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">15<span class="stat-unit">台</span></div>
+          <div class="stat-label">射出成型機台</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">ISO</div>
+          <div class="stat-label">9001 品質認證</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">5S</div>
+          <div class="stat-label">管理系統導入</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Equipment -->
+    <div class="reveal">
+      <div class="materials-title" style="margin-bottom:20px;">射出成型機台噸數</div>
+      <div class="equipment-grid">
+        <div class="equip-card"><div class="equip-ton">140</div><div class="equip-unit">Ton</div><div class="equip-count">× 1 台</div></div>
+        <div class="equip-card"><div class="equip-ton">180</div><div class="equip-unit">Ton</div><div class="equip-count">× 4 台</div></div>
+        <div class="equip-card"><div class="equip-ton">220</div><div class="equip-unit">Ton</div><div class="equip-count">× 3 台</div></div>
+        <div class="equip-card"><div class="equip-ton">260</div><div class="equip-unit">Ton</div><div class="equip-count">× 3 台</div></div>
+        <div class="equip-card"><div class="equip-ton">300</div><div class="equip-unit">Ton</div><div class="equip-count">× 2 台</div></div>
+        <div class="equip-card"><div class="equip-ton">320</div><div class="equip-unit">Ton</div><div class="equip-count">× 1 台</div></div>
+        <div class="equip-card"><div class="equip-ton">400</div><div class="equip-unit">Ton</div><div class="equip-count">× 1 台</div></div>
+        <div class="equip-card" style="background:var(--cream);border-color:var(--sand);display:flex;flex-direction:column;justify-content:center;align-items:center;">
+          <div style="font-size:11px;letter-spacing:2px;color:var(--muted);text-transform:uppercase;">總計</div>
+          <div class="equip-ton" style="margin-top:4px;">15<span style="font-size:16px;">台</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Services -->
+    <div class="reveal">
+      <div class="materials-title" style="margin-bottom:20px;">服務項目</div>
+      <div class="services-row">
+        <div class="service-card">
+          <div class="service-icon">🛠️</div>
+          <div class="service-title">模具設計</div>
+          <div class="service-en">Mold Design</div>
+          <div class="service-desc">精密模具製作，從設計到生產一手包辦，確保產品品質符合客戶需求。</div>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">⚙️</div>
+          <div class="service-title">塑膠射出成型</div>
+          <div class="service-en">Plastic Injection Molding</div>
+          <div class="service-desc">多種材料射出加工，支援透明件、食品容器、功能性零件等各類產品。</div>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">🌱</div>
+          <div class="service-title">ESG 環保開發</div>
+          <div class="service-en">ESG Eco Products</div>
+          <div class="service-desc">導入消費後再生塑膠（PCR），開發符合循環經濟理念的環保材質產品。</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT STRIP -->
+<div class="contact-strip">
+  <div class="container">
+    <div class="contact-grid">
+      <div class="contact-item reveal">
+        <div class="contact-icon">📍</div>
+        <div class="contact-label">地址</div>
+        <div class="contact-value">702036 台南市南區<br>萬皇路 372 號</div>
+      </div>
+      <div class="contact-item reveal">
+        <div class="contact-icon">📞</div>
+        <div class="contact-label">電話</div>
+        <a href="tel:+88662963715" class="contact-value">06-296-3715</a>
+      </div>
+      <div class="contact-item reveal">
+        <div class="contact-icon">📧</div>
+        <div class="contact-label">信箱</div>
+        <a href="mailto:service@ching-hao.com" class="contact-value">service@ching-hao.com</a>
+      </div>
+      <div class="contact-item reveal">
+        <div class="contact-icon">💬</div>
+        <div class="contact-label">LINE</div>
+        <a href="https://lin.ee/T4wd0OQ" target="_blank" rel="noopener" class="contact-value">@537jdvcm</a>
+      </div>
+    </div>
+  </div>
+</div>
+
 <!-- SUCCESS KEY -->
 <section class="success-section">
   <div class="container">
@@ -979,7 +1339,9 @@
 </section>
 
 <footer>
-  <strong>許芳綾</strong> &nbsp;·&nbsp; 晶豪企業股份有限公司 &nbsp;·&nbsp; 台南市南區萬皇路 372 號 &nbsp;·&nbsp; BNI 會員資料 114/12/26
+  <strong>許芳綾</strong> &nbsp;·&nbsp; 
+  <a href="https://www.ching-hao.com/" target="_blank" rel="noopener" style="color:var(--gold);text-decoration:none;">晶豪企業股份有限公司</a>
+  &nbsp;·&nbsp; 台南市南區萬皇路 372 號 &nbsp;·&nbsp; BNI 會員資料 114/12/26
 </footer>
 
 <script>
